@@ -1,0 +1,8 @@
+\c wiki_db;
+
+INSERT INTO users (name, email, password) VALUES
+	('Gordon DuGan', 'gordon.dugan2.spam@gmail.com', 'password')
+;
+INSERT INTO articles (title, content, last_edited, edited_by) VALUES
+	('Wikipedia_Articles', 'A wiki is an application, typically a web application, which allows collaborative modification, extension, or deletion of its content and structure. In a typical wiki, text is written using a simplified markup language (known as "wiki markup") or a rich-text editor. While a wiki is a type of content management system, it differs from a blog or most other such systems in that the content is created without any defined owner or leader, and wikis have little implicit structure, allowing structure to emerge according to the needs of the users. The encyclopedia project Wikipedia is the most popular wiki on the public web in terms of page views,[3] but there are many sites running many different kinds of wiki software. Wikis can serve many different purposes both public and private, including knowledge management, notetaking, community websites and intranets. Some permit control over different functions (levels of access). For example, editing rights may permit changing, adding or removing material. Others may permit access without enforcing access control. Other rules may also be imposed to organize content. Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described it as "the simplest online database that could possibly work". "Wiki" is a Hawaiian word meaning "quick"
+', CURRENT_TIMESTAMP, 1);

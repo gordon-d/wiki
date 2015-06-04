@@ -1,0 +1,5 @@
+<form action='/<%=params[:article]%>' method="POST">
+	<input type="hidden" name="_method" value="<%= @article ? 'PATCH' : 'POST'%>">
+	<textarea name="content"><%= @article["content"] %></textarea>
+	<input type="submit" value="Post article">
+</form>
