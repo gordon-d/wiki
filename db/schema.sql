@@ -14,5 +14,6 @@ CREATE TABLE articles(
 	title VARCHAR,
 	content TEXT,
 	last_edited TIMESTAMP,
-	edited_by INTEGER REFERENCES users(id)
+	edited_by INTEGER REFERENCES users(id),
+	tags TEXT[]
 );

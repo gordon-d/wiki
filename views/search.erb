@@ -1,0 +1,8 @@
+<%= @search_results.length == 0 ? "Sorry, we couldn't find any articles with those tags" : ""%>
+
+
+<% @search_results.each do |result| %>
+<a href="/<%= result[1] %>"><%= result[1]%></a>
+<br>
+<br>
+<% end %>

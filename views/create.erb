@@ -1,5 +1,8 @@
+<h1><%= @article ? "" : "Create a new article for" %> <%= params[:article] %></h1>
+
 <form action='/<%=params[:article]%>' method="POST">
 	<input type="hidden" name="_method" value="<%= @article ? 'PATCH' : 'POST'%>">
-	<textarea name="content"><%= @article["content"] %></textarea>
+	<textarea name="content"><%= @article ? @article["content"] : ''%></textarea>
+	<input type="text" name="tags" placeholder="Add any tags for the article">
 	<input type="submit" value="Post article">
 </form>

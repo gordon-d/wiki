@@ -1,1 +1,28 @@
-hello world
+<h3>Sign in</h3>
+
+<form action="/users/login" method="POST">
+	<input type="email" name="email" placeholder="Enter your Email">
+	<input type="password" name="password" placeholder="Enter your password">
+	<input type="submit" value="Login">
+</form>
+
+
+<h3>Sign up</h3>
+
+<form action="/users" method="POST">
+	<input type="text" name="name" placeholder="Enter your name">
+	<input type="email" name="email" placeholder="Enter your Email">
+	<input type="password" name="password" placeholder="Enter your password">
+	<!--todo add password confirmation -->
+	<input type="submit" value="Register">
+</form>
+
+
+
+<h3>Seach by tag</h3>
+
+<form action="/search" method="GET">
+	<input type="text" name="tags" placeholder"Enter your tags">
+	<input type="submit" value="Search">
+</form>
+

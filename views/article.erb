@@ -1,7 +1,7 @@
-<%= @article["content"] %>
+<%= $markdown.render(@article["content"]) %>
 <br>
 <br>
-Last edited by: <%= @article["name"] %>
+Last edited by: <%= @article["name"] %> at <%= @article["last_edited"] %>
 
 
 <a href="/<%= @article["title"] %>/edit">Edit this article</a>

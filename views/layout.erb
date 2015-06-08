@@ -7,7 +7,12 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	
+	<%= session[:user_name] ? "Logged in as " + session[:user_name] : "" %> 
+
+	<%= session[:user_name] ? "<a href=\"/users/logout\">Log out</a>" : "" %>
+	<br>
+	<br>
+
 	<%= yield %>
 
 </body>
